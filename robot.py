@@ -2,7 +2,7 @@ from vpython import *
 import math
 
 
-titulo = canvas(title="CUBO ROTATORIO")
+titulo = canvas(title="\t\t\tROBOT")
 
 
 cubo = box(pos=vector(-12, 6, 0), size=vector(2, 2, 2), color=color.cyan)
@@ -13,8 +13,8 @@ cubo5 = box(pos=vector(-12, 2, 0), size=vector(6, 6, 6), color=color.cyan)
 cubo6 = box(pos=vector(-12, 2, 0), size=vector(6, 6, 6), color=color.cyan)
 cubo7 = box(pos=vector(-14, 10, 3), size=vector(2, 2, 2), color=color.black)
 cubo6 = box(pos=vector(-10, 10, 3), size=vector(2, 2, 2), color=color.black)
-cili1 = cylinder(pos=vector(-8, -3, 0), axis=vector(0, 6, 0), radius=1, color=color.red)
-cili2 = cylinder(pos=vector(-16, -3, 0), axis=vector(0, 6, 0), radius=1, color=color.red)
+cili1 = cylinder(pos=vector(-8, -3, 0), axis=vector(0, 6, 0), radius=1, color=color.magenta)
+cili2 = cylinder(pos=vector(-16, -3, 0), axis=vector(0, 6, 0), radius=1, color=color.orange)
 cili3 = cylinder(pos=vector(-10, -6, 0), axis=vector(0, 6, 0), radius=1, color=color.red)
 cili4 = cylinder(pos=vector(-14, -6, 0), axis=vector(0, 6, 0), radius=1, color=color.red)
 
