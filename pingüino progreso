@@ -1,0 +1,18 @@
+from vpython import *
+from time import *
+import math
+
+#Cabeza del pinguino
+cabeza = sphere(color=color.cyan, pos=vector(0,8,0), radius= 7)
+#Ojos
+ojo1 = sphere(color=color.yellow, pos=vector(-4,7,5), radius= 2.5)
+ojo2 = sphere(color=color.yellow, pos=vector(4,7,5), radius= 2.5)
+#Pico del pinguino
+pico = cylinder(color=color.yellow, pos=vector(-0.3,5,10))
+pico.radius1 = 3 #base del cono
+pico.radius2 = 0 #punta del cono
+#Cuerpo del pinguino
+cuerpo1 = sphere(color=color.cyan, pos=vector(0,-5,0), radius= 10)
+cuerpo2 = sphere(color=color.white, pos=vector(0,-4.7,5), radius= 7)
+#Alas del pinguino
+
