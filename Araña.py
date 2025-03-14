@@ -1,48 +1,49 @@
 from vpython import *
 import math
 
+titulo=canvas(title="\t\tAraña")
 panza=sphere(pos=vector(0,0,0),radius=1.5,size=vector(2,1,1),color=color.red)
 cabeza=sphere(pos=vector(2,-1,0),radius=1,size=vector(2,1,1),color=color.blue)
 
 #Pata 1 derecha
-dpata1up=cylinder(pos=vector(2.1,-1,0.5),axis=vector(1.5,1,0.5),radius=0.1,color=color.yellow)
-drodilla1=sphere(pos=vector(3.6,0,1),radius=0.11,color=color.cyan)
-dpata1down=cylinder(pos=vector(3.6,0,1),radius=0.1,color=color.yellow)
+dpata1up=cylinder(pos=vector(2.1,-1,0.5),axis=vector(1.5,1,0.5),radius=0.1,color=color.gray(0.5))
+drodilla1=sphere(pos=vector(3.6,0,1),radius=0.11,color=color.black)
+dpata1down=cylinder(pos=vector(3.6,0,1),radius=0.1,color=color.gray(0.5))
 
 #Pata 1 izquierda
-ipata1up=cylinder(pos=vector(2.1,-1,-0.5),axis=vector(1.5,1,-0.5),radius=0.1,color=color.yellow)
-irodilla1=sphere(pos=vector(3.6,0,-1),radius=0.11,color=color.cyan)
-ipata1down=cylinder(pos=vector(3.6,0,-1),radius=0.1,color=color.yellow)
+ipata1up=cylinder(pos=vector(2.1,-1,-0.5),axis=vector(1.5,1,-0.5),radius=0.1,color=color.gray(0.5))
+irodilla1=sphere(pos=vector(3.6,0,-1),radius=0.11,color=color.black)
+ipata1down=cylinder(pos=vector(3.6,0,-1),radius=0.1,color=color.gray(0.5))
 
 #Para 2 derecha
-dpata2up=cylinder(pos=vector(2.4,-0.8,0.6),axis=vector(0.8,1.1,0.5),radius=0.1,color=color.yellow)
-drodilla2=sphere(pos=vector(3.2,0.3,1.1),radius=0.11,color=color.cyan)
-dpata2down=cylinder(pos=vector(3.2,0.3,1.1),radius=0.1,color=color.yellow)
+dpata2up=cylinder(pos=vector(2.4,-0.8,0.6),axis=vector(0.8,1.1,0.5),radius=0.1,color=color.gray(0.5))
+drodilla2=sphere(pos=vector(3.2,0.3,1.1),radius=0.11,color=color.black)
+dpata2down=cylinder(pos=vector(3.2,0.3,1.1),radius=0.1,color=color.gray(0.5))
 
 #Pata 2 izquierda
-ipata2up=cylinder(pos=vector(2.4,-0.8,-0.6),axis=vector(0.8,1.1,-0.5),radius=0.1,color=color.yellow)
-irodilla2=sphere(pos=vector(3.2,0.3,-1.1),radius=0.11,color=color.cyan)
-ipata2down=cylinder(pos=vector(3.2,0.3,-1.1),radius=0.1,color=color.yellow)
+ipata2up=cylinder(pos=vector(2.4,-0.8,-0.6),axis=vector(0.8,1.1,-0.5),radius=0.1,color=color.gray(0.5))
+irodilla2=sphere(pos=vector(3.2,0.3,-1.1),radius=0.11,color=color.black)
+ipata2down=cylinder(pos=vector(3.2,0.3,-1.1),radius=0.1,color=color.gray(0.5))
 
 #Pata 3 derecha
-dpata3up=cylinder(pos=vector(2.3,-0.6,0.7),axis=vector(0.3,1.3,0.4),radius=0.1,color=color.yellow)
-drodilla3=sphere(pos=vector(2.6,0.7,1.1),radius=0.11,color=color.cyan)
-dpata3down=cylinder(pos=vector(2.6,0.7,1.1),radius=0.1,color=color.yellow)
+dpata3up=cylinder(pos=vector(2.3,-0.6,0.7),axis=vector(0.3,1.3,0.4),radius=0.1,color=color.gray(0.5))
+drodilla3=sphere(pos=vector(2.6,0.7,1.1),radius=0.11,color=color.black)
+dpata3down=cylinder(pos=vector(2.6,0.7,1.1),radius=0.1,color=color.gray(0.5))
 
 #Pata 3 izquieda
-ipata3up=cylinder(pos=vector(2.3,-0.6,-0.7),axis=vector(0.3,1.3,-0.4),radius=0.1,color=color.yellow)
-irodilla3=sphere(pos=vector(2.6,0.7,-1.1),radius=0.11,color=color.cyan)
-ipata3down=cylinder(pos=vector(2.6,0.7,-1.1),radius=0.1,color=color.yellow)
+ipata3up=cylinder(pos=vector(2.3,-0.6,-0.7),axis=vector(0.3,1.3,-0.4),radius=0.1,color=color.gray(0.5))
+irodilla3=sphere(pos=vector(2.6,0.7,-1.1),radius=0.11,color=color.black)
+ipata3down=cylinder(pos=vector(2.6,0.7,-1.1),radius=0.1,color=color.gray(0.5))
 
 #Pata 4 derecha
-dpata4up=cylinder(pos=vector(1.9,-0.6,0.6),axis=vector(0.2,1.3,0.4),radius=0.1,color=color.yellow)
-drodilla4=sphere(pos=vector(2.1,0.7,1),radius=0.11,color=color.cyan)
-dpata4down=cylinder(pos=vector(2.1,0.7,1),radius=0.1,color=color.yellow)
+dpata4up=cylinder(pos=vector(1.9,-0.6,0.6),axis=vector(0.2,1.3,0.4),radius=0.1,color=color.gray(0.5))
+drodilla4=sphere(pos=vector(2.1,0.7,1),radius=0.11,color=color.black)
+dpata4down=cylinder(pos=vector(2.1,0.7,1),radius=0.1,color=color.gray(0.5))
 
 #Pata 4 izquieda
-ipata4up=cylinder(pos=vector(1.9,-0.6,-0.6),axis=vector(0.2,1.3,-0.4),radius=0.1,color=color.yellow)
-irodilla4=sphere(pos=vector(2.1,0.7,-1),radius=0.11,color=color.cyan)
-ipata4down=cylinder(pos=vector(2.1,0.7,-1),radius=0.1,color=color.yellow)
+ipata4up=cylinder(pos=vector(1.9,-0.6,-0.6),axis=vector(0.2,1.3,-0.4),radius=0.1,color=color.gray(0.5))
+irodilla4=sphere(pos=vector(2.1,0.7,-1),radius=0.11,color=color.black)
+ipata4down=cylinder(pos=vector(2.1,0.7,-1),radius=0.1,color=color.gray(0.5))
 
 #Ojos derecha
 dojo1=sphere(pos=vector(2.8,-1.2,0.15),radius=0.25,color=color.green)
@@ -61,7 +62,7 @@ amplitud=20
 amplitud2 = -20
 tiempo=0
 tiempo2=0
-frecuencia=0.2
+frecuencia=0.5
 while True:
     rate (30)
     #dpata1down.rotate(angle=0.05,axis=vector(0,0,1))
