@@ -60,12 +60,12 @@ while True:
     cuerpo2.pos = vector(radio * math.cos(angulo_circular), -5.7, radio * math.sin(angulo_circular))
 
     # Movimiento de las alas
-    ala_izquierda.rotate(angle=math.radians(angulo_circular), axis=vector(0,1,0), origin=cuerpo2.pos)
-    ala_derecha.rotate(angle=math.radians(angulo_circular), axis=vector(0,1,0), origin=cuerpo2.pos)
+    ala_izquierda.pos = cuerpo1.pos + vector (10,0,2)
+    ala_derecha.pos = cuerpo1.pos + vector (-10,0,2)
     
     # Movimiento de las patas
     pata_izquierda.axis = vector(0,6,0)
-    pata_izquierda.rotate(angle=math.radians(angulo_circular), axis=vector(0,1,0), origin=cuerpo1.pos)
+    pata_izquierda.rotate(angle=math.radians(angulo_circular),8,radio * math.sin(angulo_circular))
     pata_derecha.axis = vector(0,6,0)
     pata_derecha.rotate(angle=math.radians(angulo_circular), axis=vector(0,1,0), origin=cuerpo1.pos)
     

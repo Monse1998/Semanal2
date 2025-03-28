@@ -1,8 +1,10 @@
 from vpython import *
+#from three import *
 import math
 
 # Crear la escena
-scene = canvas()
+titulo = canvas(title="\t\t\tPinguino")
+#scene.background = new THREE.Color('orange');
 
 # Cabeza del pingüino
 cabeza = sphere(color=color.cyan, pos=vector(0,8,0), radius=7)
